@@ -55,8 +55,9 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var
 .disclaimer-banner strong { display: block; margin-bottom: 4px; }
 
 /* ===== LAYOUT ===== */
-.page-wrapper { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.main-layout { display: grid; grid-template-columns: 260px 1fr; gap: 32px; padding: 32px 0; }
+.page-wrapper { max-width: 100%; margin: 0 auto; padding: 0 40px; }
+.main-layout { display: grid; grid-template-columns: 1fr; gap: 32px; padding: 32px 0; }
+.sidebar { display: none; }
 
 /* ===== SIDEBAR ===== */
 .sidebar { position: sticky; top: 80px; height: fit-content; }
@@ -232,7 +233,6 @@ footer a { color: rgba(255,255,255,0.7); }
 /* ===== MOBILE ===== */
 @media (max-width: 900px) {
   .main-layout { grid-template-columns: 1fr; }
-  .sidebar { position: static; }
   .header-nav { display: none; }
   .hamburger { display: block; }
   .hero h1 { font-size: 24px; }
