@@ -72,6 +72,7 @@ let currentSSStep = 0;
 function buildScreenshotViewer() {
   const tabsContainer = document.getElementById('ssTabsContainer');
   const panelsContainer = document.getElementById('ssPanelsContainer');
+  if (!tabsContainer || !panelsContainer) return;
 
   taxslayerSteps.forEach((step, i) => {
     // Tab
