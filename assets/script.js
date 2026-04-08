@@ -605,3 +605,24 @@ function checkFICAExemption() {
   resultDiv.style.display = 'block';
 }
 
+/* ===== SIDEBAR TOGGLE ===== */
+function toggleSidebar() {
+  const sidebar = document.getElementById('mainSidebar');
+  const revealBtn = document.getElementById('sidebarRevealBtn');
+  if (!sidebar) return;
+  const isCollapsed = sidebar.classList.toggle('collapsed');
+  if (revealBtn) revealBtn.classList.toggle('visible', isCollapsed);
+  localStorage.setItem('sidebarCollapsed', isCollapsed ? '1' : '0');
+}
+
+// Restore sidebar state on load
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('mainSidebar');
+    const revealBtn = document.getElementById('sidebarRevealBtn');
+    if (sidebar && localStorage.getItem('sidebarCollapsed') === '1') {
+      sidebar.classList.add('collapsed');
+      if (revealBtn) revealBtn.classList.add('visible');
+    }
+  });
+})();
