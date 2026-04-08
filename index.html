@@ -1595,34 +1595,133 @@
       <!-- TAB: INVESTMENTS -->
       <div class="tab-panel" id="tab-cx-investments">
         <h4 style="color:var(--primary);margin-bottom:12px;">Investment Income &amp; Capital Gains</h4>
+
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Income Type</th><th>Tax Treatment for NRA</th><th>Withholding Rate</th></tr></thead>
+            <thead><tr><th>Income Type</th><th>Tax Treatment for NRA</th><th>Rate</th><th>Key Law</th></tr></thead>
             <tbody>
-              <tr><td>U.S. stock dividends</td><td>Taxable; fixed-rate flat tax</td><td>30% (or lower treaty rate)</td></tr>
-              <tr><td>Capital gains from stocks (short-term)</td><td>Generally <strong>not taxable</strong> for NRAs (not U.S.-source income) unless connected to U.S. business</td><td>0% in most cases</td></tr>
-              <tr><td>Capital gains from stocks (long-term)</td><td>Same as above — generally exempt for NRAs</td><td>0% in most cases</td></tr>
-              <tr><td>Interest from U.S. bank accounts</td><td><strong>Exempt</strong> for nonresident aliens</td><td>0%</td></tr>
-              <tr><td>Cryptocurrency gains</td><td>Treated as property; complex analysis required</td><td>Varies</td></tr>
-              <tr><td>U.S. real property sale (FIRPTA)</td><td>Subject to 15% withholding on gross sales price under FIRPTA rules</td><td>15% withholding</td></tr>
+              <tr><td>U.S. stock dividends</td><td><span class="tag tag-red">Taxable</span> — flat rate</td><td>30% (or lower treaty rate)</td><td>IRC §871(a)</td></tr>
+              <tr><td>Capital gains from stocks (short or long-term)</td><td><span class="tag tag-green">Generally not taxable</span> — gains are foreign-source income because they are sourced to the seller's country of residence, not the U.S.</td><td>0% in most cases</td><td>IRC §865</td></tr>
+              <tr><td>Capital gains — 183-day exception</td><td><span class="tag tag-yellow">Taxable</span> if present in U.S. ≥ 183 days in the tax year (rare for F-1/J-1 students in exempt years)</td><td>30% flat on net gains</td><td>IRC §871(a)(2)</td></tr>
+              <tr><td>Interest from U.S. bank accounts</td><td><span class="tag tag-green">Exempt</span> for nonresident aliens</td><td>0%</td><td>IRC §871(i)</td></tr>
+              <tr><td>Cryptocurrency gains</td><td>Treated as property — same source rules as stocks; generally not taxable for NRAs unless ECI</td><td>Varies</td><td>IRS Notice 2014-21</td></tr>
+              <tr><td><strong>U.S. real property sale (FIRPTA)</strong></td><td><span class="tag tag-red">Always taxable</span> — special rule overrides normal source rules</td><td>15% withholding on gross price; actual tax at capital gains rates</td><td>IRC §897</td></tr>
             </tbody>
           </table>
         </div>
+
         <div class="accordion" style="margin-top:16px;">
           <div class="accordion-header" onclick="toggleAccordion(this)">📊 Brokerage Accounts — What to Report on Form 1040-NR <span class="accordion-arrow">▼</span></div>
           <div class="accordion-body">
             <p style="font-size:14px;margin-bottom:10px;">If you have a U.S. brokerage account (e.g., Robinhood, Fidelity, Schwab), you will typically receive <strong>Form 1099-B</strong> and possibly <strong>Form 1099-DIV</strong>. For nonresident aliens:</p>
             <ul style="font-size:14px;padding-left:20px;line-height:2.1;">
-              <li>Capital gains from selling stocks are generally <strong>not taxable</strong> unless the gain is "effectively connected" to a U.S. business</li>
-              <li>Dividends from U.S. corporations are taxable at <strong>30%</strong> (or treaty rate) — usually already withheld</li>
-              <li>You report dividends on <strong>Schedule NEC</strong> of Form 1040-NR</li>
-              <li>If a treaty reduces your withholding rate, check your 1042-S (not 1099-DIV) to confirm the correct rate was applied</li>
+              <li>Capital gains from selling stocks are generally <strong>not taxable</strong> — gains are sourced to your country of residence under IRC §865, not to the U.S. You do <strong>not</strong> report stock capital gains on Form 1040-NR</li>
+              <li>Dividends from U.S. corporations are taxable at <strong>30%</strong> (or lower treaty rate) — usually already withheld by the broker</li>
+              <li>Report dividends on <strong>Schedule NEC</strong> of Form 1040-NR (not Schedule D)</li>
+              <li>If a treaty reduces your withholding rate, check your <strong>1042-S</strong> (not 1099-DIV) to confirm the correct rate was applied by your broker</li>
+              <li>Interest from a U.S. bank or brokerage money market account is <strong>exempt</strong> — do not report it</li>
             </ul>
           </div>
         </div>
-        <div class="alert alert-info" style="margin-top:12px;">
-          <span class="alert-icon">💡</span>
-          <div><strong>FIRPTA (Foreign Investment in Real Property Tax Act):</strong> If you sell U.S. real estate, the buyer is required to withhold 15% of the gross sales price. You file Form 8288 to report this and may be able to claim a refund if your actual tax liability is lower. This is a highly complex area — always use a qualified tax professional.</div>
+
+        <div class="accordion" style="margin-top:8px;">
+          <div class="accordion-header" onclick="toggleAccordion(this)">🏠 FIRPTA — Selling U.S. Real Property (Full Detail) <span class="accordion-arrow">▼</span></div>
+          <div class="accordion-body">
+
+            <div class="alert alert-danger" style="margin-bottom:16px;">
+              <span class="alert-icon">🚨</span>
+              <div><strong>FIRPTA overrides the normal source rules.</strong> While stock gains escape U.S. tax because they are foreign-source, Congress enacted FIRPTA (IRC §897) in 1980 specifically to tax foreign investors on U.S. real property appreciation. There is no exemption — gains from selling U.S. real property are <strong>always taxable</strong> for NRAs.</div>
+            </div>
+
+            <h4 style="color:var(--primary);margin:16px 0 10px;">What Counts as a U.S. Real Property Interest (USRPI)?</h4>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Counts as USRPI</th><th>Does NOT Count</th></tr></thead>
+                <tbody>
+                  <tr><td>Direct ownership of U.S. land or buildings</td><td>Foreign real property</td></tr>
+                  <tr><td>U.S. rental property</td><td>Personal property (cars, furniture)</td></tr>
+                  <tr><td>Condominiums, townhouses in the U.S.</td><td>U.S. government bonds</td></tr>
+                  <tr><td>Interests in a U.S. Real Property Holding Corporation (USRPHC)</td><td>Stock in a publicly traded U.S. corporation (unless you own &gt;5%)</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 style="color:var(--primary);margin:20px 0 10px;">How the Tax Works — 3 Steps</h4>
+            <div class="steps">
+              <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h4>Buyer Withholds at Closing</h4>
+                  <p>The buyer is legally required to withhold from the proceeds and remit to the IRS using <strong>Form 8288</strong>:</p>
+                  <div class="table-wrap" style="margin-top:10px;">
+                    <table>
+                      <thead><tr><th>Situation</th><th>Withholding Rate</th></tr></thead>
+                      <tbody>
+                        <tr><td>General rule</td><td><strong>15%</strong> of gross sales price</td></tr>
+                        <tr><td>Sales price ≤ $300,000 and buyer uses as personal residence</td><td><strong>0%</strong> (exempt)</td></tr>
+                        <tr><td>Sales price $300,001–$1,000,000 and buyer uses as personal residence</td><td><strong>10%</strong> of gross sales price</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="step-warning">Withholding is on the <strong>gross sales price</strong>, not the gain. If you sell for $400,000, the buyer withholds $60,000 — even if your actual gain (and tax) is much less.</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h4>File Form 1040-NR to Report Actual Gain</h4>
+                  <p>Report the actual gain on Form 1040-NR. The gain is taxed at:</p>
+                  <ul style="font-size:14px;padding-left:20px;margin-top:8px;line-height:2;">
+                    <li><strong>Long-term capital gains rates</strong> (0%, 15%, or 20%) if held more than 1 year</li>
+                    <li><strong>Ordinary income rates</strong> if held 1 year or less</li>
+                  </ul>
+                  <div class="step-tip">💡 If the 15% withholding exceeds your actual tax liability, you will receive a <strong>refund</strong> when you file your 1040-NR.</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h4>Optional: Apply for Reduced Withholding Before Closing</h4>
+                  <p>If you know your actual tax will be significantly less than 15% of the gross price, you can file <strong>Form 8288-B</strong> with the IRS <em>before closing</em> to request a reduced withholding certificate. The IRS has 90 days to respond.</p>
+                </div>
+              </div>
+            </div>
+
+            <h4 style="color:var(--primary);margin:20px 0 10px;">FIRPTA Forms Reference</h4>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Form</th><th>Who Files</th><th>Purpose</th><th>Deadline</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Form 8288</strong></td><td>Buyer (withholding agent)</td><td>Reports and remits withheld amount to IRS</td><td>20 days after closing</td></tr>
+                  <tr><td><strong>Form 8288-A</strong></td><td>Buyer files; copy sent to seller</td><td>Seller's receipt of withholding — attach to your 1040-NR to claim credit</td><td>Filed with Form 8288</td></tr>
+                  <tr><td><strong>Form 8288-B</strong></td><td>Seller (before closing)</td><td>Request reduced withholding if actual tax is less than 15%</td><td>Before or at closing</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 style="color:var(--primary);margin:20px 0 10px;">Wisconsin — Additional State Obligation</h4>
+            <div class="alert alert-warning">
+              <span class="alert-icon">🏛️</span>
+              <div>If the property is located in Wisconsin, the gain is also <strong>Wisconsin-source income</strong> taxable on Form 1NPR. Wisconsin has its own nonresident withholding requirement — the buyer files <strong>Form PW-1</strong> to withhold Wisconsin tax at closing. Report the Wisconsin gain on your Form 1NPR and claim the PW-1 withholding as a credit.</div>
+            </div>
+
+            <h4 style="color:var(--primary);margin:20px 0 10px;">Practical Example</h4>
+            <div style="background:#f8f4ee;border:1px solid var(--border);border-radius:var(--radius);padding:18px;font-size:14px;line-height:1.9;">
+              An F-1 student purchased a condo in Green Bay for <strong>$200,000</strong>. Three years later, they sell it for <strong>$280,000</strong> (long-term gain = <strong>$80,000</strong>).
+              <ul style="padding-left:20px;margin-top:10px;">
+                <li>Buyer withholds: $280,000 × 15% = <strong>$42,000</strong> remitted to IRS via Form 8288</li>
+                <li>Student's actual federal tax: $80,000 × 15% long-term rate = <strong>$12,000</strong></li>
+                <li>Student files Form 1040-NR → <strong>refund of $30,000</strong></li>
+                <li>Student also reports the gain on <strong>Wisconsin Form 1NPR</strong> and claims credit for any Form PW-1 withholding</li>
+              </ul>
+            </div>
+
+            <div class="alert alert-danger" style="margin-top:16px;">
+              <span class="alert-icon">👨‍💼</span>
+              <div><strong>Always use a qualified tax professional for FIRPTA transactions.</strong> Errors in withholding or filing can result in penalties for both buyer and seller. A CPA or Enrolled Agent experienced in nonresident alien returns should be engaged before closing.</div>
+            </div>
+
+          </div>
         </div>
       </div>
 
