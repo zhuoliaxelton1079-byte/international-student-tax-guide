@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Student Tax Filing Guide | 1040-NR & Wisconsin 1NPR</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="site-logo">
+      <span class="logo-icon">🎓</span>
+      <div>
+        <div class="logo-text">International Student Tax Guide</div>
+        <div class="logo-sub">Form 1040-NR &amp; Wisconsin 1NPR | UWGB VITA</div>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="#residency">Residency Test</a>
+      <a href="#documents">Documents</a>
+      <a href="#treaty">Treaty Tool</a>
+      <a href="#federal">Federal Return</a>
+      <a href="#wisconsin">Wisconsin</a>
+      <a href="#taxslayer">TaxSlayer Guide</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#fica">FICA Exemption</a>
+      <a href="#resources">Resources</a>
+    </nav>
+    <button class="hamburger" onclick="toggleMobileNav()">&#9776;</button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav" onclick="closeMobileNav(event)">
+  <div class="mobile-nav-panel">
+    <a href="#overview" onclick="closeMobileNav()">📋 Overview</a>
+    <a href="#residency" onclick="closeMobileNav()">🔍 Residency Test</a>
+    <a href="#documents" onclick="closeMobileNav()">📄 Documents</a>
+    <a href="#treaty" onclick="closeMobileNav()">🌐 Treaty Benefits</a>
+    <a href="#federal" onclick="closeMobileNav()">🇺🇸 Federal Return</a>
+    <a href="#wisconsin" onclick="closeMobileNav()">🏛️ Wisconsin Return</a>
+    <a href="#taxslayer" onclick="closeMobileNav()">💻 TaxSlayer Guide</a>
+    <a href="#checklist" onclick="closeMobileNav()">✅ Final Checklist</a>
+    <a href="#fica" onclick="closeMobileNav()">🏦 FICA Exemption</a>
+    <a href="#resources" onclick="closeMobileNav()">📚 Resources</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div class="hero" id="top">
+  <h1>International Student Tax Filing Guide</h1>
+  <p>Step-by-step guidance for F-1 &amp; J-1 students filing Form 1040-NR and Wisconsin Form 1NPR, with interactive tools and TaxSlayer walkthrough.</p>
+  <div class="hero-badges">
+    <span class="badge">📅 Tax Year 2025</span>
+    <span class="badge">🎓 F-1 &amp; J-1 Visas</span>
+    <span class="badge">🇺🇸 Federal 1040-NR</span>
+    <span class="badge">🏛️ Wisconsin 1NPR</span>
+    <span class="badge">💻 TaxSlayer FSA</span>
+  </div>
+  <br>
+  <div class="disclaimer-banner">
+    <strong>⚠️ Disclaimer</strong>
+    This guide is for informational purposes only and provides a general understanding of tax principles for international students. Each individual has a unique tax position and is responsible for their own tax determination and compliance. For complex situations (marriage, dependents, green card application, self-employment), consult a qualified tax professional.
+  </div>
+</div>
+
+<!-- ===== MAIN LAYOUT ===== -->
+<div class="page-wrapper">
+<div class="main-layout">
+
+<!-- ===== SIDEBAR ===== -->
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    <h3>📑 Navigation</h3>
+    <ul>
+      <li><a href="#overview" class="nav-link"><span class="nav-icon">📋</span> Overview</a></li>
+      <li><a href="#residency" class="nav-link"><span class="nav-icon">🔍</span> Residency Test Tool</a></li>
+      <li><a href="#documents" class="nav-link"><span class="nav-icon">📄</span> Required Documents</a></li>
+      <li><a href="#treaty" class="nav-link"><span class="nav-icon">🌐</span> Treaty Benefits Tool</a></li>
+      <div class="divider"></div>
+      <li><a href="#federal" class="nav-link"><span class="nav-icon">🇺🇸</span> Federal Return (1040-NR)</a></li>
+      <li><a href="#wisconsin" class="nav-link"><span class="nav-icon">🏛️</span> Wisconsin Return (1NPR)</a></li>
+      <div class="divider"></div>
+      <li><a href="#taxslayer" class="nav-link"><span class="nav-icon">💻</span> TaxSlayer Walkthrough</a></li>
+      <li><a href="#checklist" class="nav-link"><span class="nav-icon">✅</span> Final Checklist</a></li>
+      <li><a href="#fica" class="nav-link"><span class="nav-icon">🏦</span> FICA Exemption</a></li>
+      <li><a href="#resources" class="nav-link"><span class="nav-icon">📚</span> Resources</a></li>
+    </ul>
+  </nav>
+  <div class="progress-bar">
+    <h4>📊 Checklist Progress</h4>
+    <div class="progress-track"><div class="progress-fill" id="sidebarProgress"></div></div>
+    <div class="progress-label" id="sidebarProgressLabel">0 of 16 items completed</div>
+  </div>
+</aside>
+
+<!-- ===== CONTENT ===== -->
+<main class="content-area">
+
+<!-- ===== SECTION 1: OVERVIEW ===== -->
+<section class="section" id="overview">
+  <div class="section-header">
+    <h2><span class="section-num">1</span> Overview of U.S. Tax Reporting</h2>
+    <p>Understanding how the U.S. tax system works for international students</p>
+  </div>
+  <div class="section-body">
+    <p style="margin-bottom:16px;">The U.S. tax system operates on a <strong>pay-as-you-go</strong> basis. Throughout the year, your employer or institution withholds estimated taxes from your income and sends them directly to the IRS. At year-end, you file a tax return to calculate your actual liability — you may receive a refund if too much was withheld, or owe additional tax if too little was withheld.</p>
+
+    <div class="card-grid">
+      <div class="info-card">
+        <div class="card-icon">📅</div>
+        <h4>Filing Deadline</h4>
+        <p>April 15 for those with U.S. income. June 15 for Form 8843 only (no income).</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">📝</div>
+        <h4>Your Form</h4>
+        <p>Most F-1/J-1 students file <strong>Form 1040-NR</strong> (not the regular 1040).</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🏛️</div>
+        <h4>State Return</h4>
+        <p>Wisconsin residents also file <strong>Form 1NPR</strong> for Wisconsin-source income.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">📋</div>
+        <h4>Form 8843</h4>
+        <p>Required for ALL F-1/J-1 students, even if you had no U.S. income.</p>
+      </div>
+    </div>
+
+    <div class="alert alert-danger">
+      <span class="alert-icon">🚨</span>
+      <div><strong>Why Filing Matters:</strong> Tax compliance is part of maintaining your visa status. Failure to file may affect future immigration applications, result in missed treaty benefits and refunds, and lead to fines, penalties, and interest if you owe taxes.</div>
+    </div>
+
+    <h3 style="margin: 20px 0 12px; color: var(--primary);">Who Must File What?</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Situation</th><th>Federal Forms Required</th><th>Wisconsin Form</th><th>Deadline</th></tr></thead>
+        <tbody>
+          <tr><td>No U.S. income (F-1/J-1)</td><td>Form 8843 only</td><td>Not required</td><td>June 15</td></tr>
+          <tr><td>Has U.S. wages (W-2)</td><td>Form 1040-NR + Form 8843</td><td>Form 1NPR (if WI wages ≥ $2,000)</td><td>April 15</td></tr>
+          <tr><td>Has scholarship income (1042-S)</td><td>Form 1040-NR + Form 8843</td><td>Form 1NPR (if WI-source)</td><td>April 15</td></tr>
+          <tr><td>No income but want refund</td><td>Form 1040-NR + Form 8843</td><td>Form 1NPR (to claim WI withholding)</td><td>April 15</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab-container">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab(this, 'tab-income-taxable')">Taxable Income</button>
+        <button class="tab-btn" onclick="switchTab(this, 'tab-income-exempt')">Exempt Income</button>
+        <button class="tab-btn" onclick="switchTab(this, 'tab-special-rules')">Special Rules</button>
+      </div>
+      <div class="tab-panel active" id="tab-income-taxable">
+        <h4 style="color:var(--primary);margin-bottom:12px;">Common Taxable U.S. Source Income</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Income Type</th><th>Form</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr><td>U.S. Employment wages</td><td><span class="tag tag-blue">W-2</span></td><td>On-campus jobs, OPT/CPT employment</td></tr>
+              <tr><td>Scholarships (non-tuition portion)</td><td><span class="tag tag-blue">1042-S</span></td><td>Room, board, stipends — taxable portion only</td></tr>
+              <tr><td>Investment income (dividends, capital gains)</td><td><span class="tag tag-blue">1099-B/DIV</span></td><td>Subject to 30% withholding unless treaty applies</td></tr>
+              <tr><td>Independent contractor / awards</td><td><span class="tag tag-blue">1099-NEC/MISC</span></td><td>Out of scope for VITA — see a professional</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-income-exempt">
+        <h4 style="color:var(--green);margin-bottom:12px;">Income NOT Subject to U.S. Tax Reporting</h4>
+        <ul style="padding-left:20px;font-size:14px;line-height:2;">
+          <li>Scholarships used <strong>only</strong> for tuition and required fees</li>
+          <li>Scholarships received from <strong>outside the U.S.</strong></li>
+          <li>Money transferred from parents or relatives overseas</li>
+          <li>Interest income from a <strong>regular U.S. bank account</strong></li>
+          <li>Income exempt under a <strong>U.S. tax treaty</strong> (see Treaty Tool below)</li>
+        </ul>
+      </div>
+      <div class="tab-panel" id="tab-special-rules">
+        <h4 style="color:var(--accent);margin-bottom:12px;">Special Rules for Nonresident Aliens</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Rule</th><th>Details</th></tr></thead>
+            <tbody>
+              <tr><td>Filing Status</td><td>Only <strong>Single</strong> or Married Filing Separately (no MFJ for most)</td></tr>
+              <tr><td>Standard Deduction</td><td><strong>Not allowed</strong> for most nonresidents (exception: students from India for federal only)</td></tr>
+              <tr><td>FICA Taxes</td><td>F-1/J-1 students on nonresident status are <strong>exempt</strong> from Social Security &amp; Medicare taxes</td></tr>
+              <tr><td>Education Credits</td><td><strong>Not available</strong> to nonresident aliens (Form 1098-T is not relevant)</td></tr>
+              <tr><td>Earned Income Credit</td><td><strong>Not available</strong> to nonresident aliens</td></tr>
+              <tr><td>Wisconsin Standard Deduction</td><td><strong>Not allowed</strong> for nonresident aliens, including students from India</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: RESIDENCY TEST TOOL ===== -->
+<section class="section" id="residency">
+  <div class="section-header">
+    <h2><span class="section-num">2</span> Tax Residency Determination Tool</h2>
+    <p>Determine whether you are a Resident Alien or Nonresident Alien for federal tax purposes</p>
+  </div>
+  <div class="section-body">
+    <div class="alert alert-info">
+      <span class="alert-icon">ℹ️</span>
+      <div><strong>Why This Matters:</strong> Your tax residency status determines which form you file (1040 vs. 1040-NR), what income is taxable, and what deductions/credits you can claim. Most F-1/J-1 students are <strong>nonresident aliens</strong> during their first 5 years in the U.S.</div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        📖 Understanding the Substantial Presence Test (SPT) <span class="accordion-arrow">▼</span>
+      </div>
+      <div class="accordion-body">
+        <p style="margin-bottom:12px;">The Substantial Presence Test determines if you have been in the U.S. long enough to be considered a resident for tax purposes. You meet the SPT if you were present in the U.S. for:</p>
+        <ul style="padding-left:20px;margin-bottom:12px;font-size:14px;line-height:2;">
+          <li>At least <strong>31 days</strong> during the current year, <strong>AND</strong></li>
+          <li>At least <strong>183 weighted days</strong> during the 3-year period, calculated as:
+            <ul>
+              <li>All days present in <strong>current year (2025)</strong> × 1</li>
+              <li>Days present in <strong>prior year (2024)</strong> × 1/3</li>
+              <li>Days present in <strong>two years ago (2023)</strong> × 1/6</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="alert alert-warning">
+          <span class="alert-icon">⚠️</span>
+          <div><strong>Exempt Individuals:</strong> F-1, J-1, M-1, and Q-1 students are <strong>exempt</strong> from counting days toward the SPT for their first <strong>5 calendar years</strong> in the U.S. This means most international students remain nonresident aliens during this period. "Exempt" does NOT mean exempt from paying taxes!</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-box">
+      <h3>🔍 Residency Status Calculator</h3>
+      <p class="tool-desc">Answer the questions below to determine your federal tax residency status for 2025.</p>
+
+      <div class="form-group">
+        <label>1. What is your visa type?</label>
+        <select id="visaType" onchange="updateResidencyHints()">
+          <option value="">-- Select visa type --</option>
+          <option value="f1">F-1 (Student)</option>
+          <option value="j1_student">J-1 (Student)</option>
+          <option value="j1_teacher">J-1 (Teacher/Trainee)</option>
+          <option value="m1">M-1 (Vocational Student)</option>
+          <option value="h1b">H-1B (Work)</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="yearsGroup">
+        <label>2. How many calendar years have you been in the U.S. on this visa status? <span style="color:var(--text-muted);font-weight:400;">(Count partial years as full years)</span></label>
+        <select id="yearsInUS">
+          <option value="">-- Select --</option>
+          <option value="1">1st year (arrived this year)</option>
+          <option value="2">2nd year</option>
+          <option value="3">3rd year</option>
+          <option value="4">4th year</option>
+          <option value="5">5th year</option>
+          <option value="6">6th year or more</option>
+        </select>
+      </div>
+
+      <div id="sptSection" style="display:none;">
+        <div class="alert alert-info" style="margin-bottom:16px;">
+          <span class="alert-icon">📅</span>
+          <div>Since you may be subject to the Substantial Presence Test, please enter your days present in the U.S. You can find your travel history at <a href="https://i94.cbp.dhs.gov/search/history-search" target="_blank" style="color:var(--primary);font-weight:600;">i94.cbp.dhs.gov</a></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Days in U.S. in 2025</label>
+            <input type="number" id="days2025" min="0" max="366" placeholder="e.g., 300" oninput="calcSPT()">
+          </div>
+          <div class="form-group">
+            <label>Days in U.S. in 2024</label>
+            <input type="number" id="days2024" min="0" max="365" placeholder="e.g., 365" oninput="calcSPT()">
+          </div>
+          <div class="form-group">
+            <label>Days in U.S. in 2023</label>
+            <input type="number" id="days2023" min="0" max="365" placeholder="e.g., 365" oninput="calcSPT()">
+          </div>
+        </div>
+        <div id="sptCalcResult" style="background:var(--gray-bg);border-radius:8px;padding:12px;font-size:13px;margin-bottom:12px;display:none;">
+          <strong>SPT Calculation:</strong> <span id="sptFormula"></span>
+        </div>
+      </div>
+
+      <button class="btn-primary" onclick="calculateResidency()">🔍 Determine My Tax Status</button>
+
+      <div class="result-box" id="residencyResult">
+        <div class="result-header" id="residencyResultHeader"></div>
+        <div class="result-body" id="residencyResultBody"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: DOCUMENTS ===== -->
+<section class="section" id="documents">
+  <div class="section-header">
+    <h2><span class="section-num">3</span> Required Documents</h2>
+    <p>Gather all necessary documents before you begin filing</p>
+  </div>
+  <div class="section-body">
+    <div class="card-grid">
+      <div class="info-card">
+        <div class="card-icon">🛂</div>
+        <h4>Immigration Documents</h4>
+        <p>Passport, visa type (F-1/J-1), I-20 (F-1) or DS-2019 (J-1), I-94 arrival/departure record</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🪪</div>
+        <h4>Tax ID</h4>
+        <p>Social Security Number (SSN) if authorized to work, or ITIN (Individual Taxpayer ID) for scholarship recipients</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">📊</div>
+        <h4>Income Documents</h4>
+        <p>W-2 (wages), 1042-S (scholarships/treaty), 1099-INT/DIV/B (investment income)</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">✈️</div>
+        <h4>Travel History</h4>
+        <p>Entry and exit dates for past 3 years — needed for Schedule OI and Form 8843. Check at i94.cbp.dhs.gov</p>
+      </div>
+    </div>
+
+    <h3 style="margin:20px 0 12px;color:var(--primary);">Understanding Your Tax Forms</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Form</th><th>Issued By</th><th>What It Reports</th><th>Action Required</th></tr></thead>
+        <tbody>
+          <tr><td><strong>W-2</strong></td><td>Your employer</td><td>Wages, federal/state tax withheld, FICA</td><td>Enter all boxes into tax software</td></tr>
+          <tr><td><strong>1042-S</strong></td><td>University / payer</td><td>Scholarships, fellowships, treaty-exempt income</td><td>Report taxable portion only; use school's breakdown</td></tr>
+          <tr><td><strong>1099-INT</strong></td><td>Bank</td><td>Interest income</td><td>Usually exempt for nonresidents — retain the form</td></tr>
+          <tr><td><strong>1099-DIV</strong></td><td>Broker</td><td>Dividend income</td><td>Report if required; 30% withholding may apply</td></tr>
+          <tr><td><strong>1099-B</strong></td><td>Broker</td><td>Capital gains/losses from sales</td><td>Report as required</td></tr>
+          <tr><td><strong>1098-T</strong></td><td>University</td><td>Tuition paid</td><td><strong>Not relevant</strong> for nonresident aliens — ignore</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        🪪 SSN vs. ITIN — Which Do You Need? <span class="accordion-arrow">▼</span>
+      </div>
+      <div class="accordion-body">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>SSN (Social Security Number)</th><th>ITIN (Individual Taxpayer ID)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Who gets it</strong></td><td>Students authorized to work in the U.S. (on-campus jobs, OPT/CPT)</td><td>Students with U.S. income but not authorized to work (e.g., scholarship recipients)</td></tr>
+              <tr><td><strong>How to get it</strong></td><td>Apply at a Social Security Administration office with your I-20 and employment authorization</td><td>Apply with IRS Form W-7 along with your tax return</td></tr>
+              <tr><td><strong>Required for filing</strong></td><td>Yes, if you have one</td><td>Yes, if you don't have an SSN but have U.S. income</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-warning">
+      <span class="alert-icon">⚠️</span>
+      <div><strong>Check Your W-2 Boxes 3–6:</strong> Nonresident F-1/J-1 students are generally <strong>exempt from FICA taxes</strong> (Social Security and Medicare). If your W-2 shows amounts in Boxes 4 or 6, you may have been incorrectly withheld. Contact your employer for a refund, or file Form 843 and 8316 with the IRS.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: TREATY TOOL ===== -->
+<section class="section" id="treaty">
+  <div class="section-header">
+    <h2><span class="section-num">4</span> Tax Treaty Benefits Tool</h2>
+    <p>Check if your country has a tax treaty with the U.S. that may reduce or eliminate your tax liability</p>
+  </div>
+  <div class="section-body">
+    <div class="alert alert-success">
+      <span class="alert-icon">✅</span>
+      <div><strong>What Are Tax Treaties?</strong> The U.S. has tax treaties with many countries that allow eligible students to exclude certain income from U.S. taxation. Treaty-exempt income is also exempt for Wisconsin tax purposes. Treaty benefits are claimed on <strong>Schedule OI, Item L</strong> of Form 1040-NR.</div>
+    </div>
+
+    <div class="tab-container">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab(this, 'tab-treaty-tool')">🔍 Treaty Lookup Tool</button>
+        <button class="tab-btn" onclick="switchTab(this, 'tab-treaty-code16')">📚 Income Code 16 (Scholarships)</button>
+        <button class="tab-btn" onclick="switchTab(this, 'tab-treaty-code20')">💼 Income Code 20 (Wages)</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-treaty-tool">
+        <div class="tool-box">
+          <h3>🌐 Treaty Benefits Checker</h3>
+          <p class="tool-desc">Select your country and income type to check if you qualify for treaty benefits.</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Country of Tax Residence</label>
+              <select id="treatyCountry" onchange="checkTreaty()">
+                <option value="">-- Select country --</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China, People's Republic of</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Estonia">Estonia</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Israel">Israel</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Korea">Korea, South</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Malta">Malta</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Norway">Norway</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Romania">Romania</option>
+                <option value="Slovak Republic">Slovak Republic</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Spain">Spain</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="OTHER">My country is not listed</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Income Type</label>
+              <select id="treatyIncomeType" onchange="checkTreaty()">
+                <option value="">-- Select income type --</option>
+                <option value="16">Code 16 — Scholarship / Fellowship Grant</option>
+                <option value="20">Code 20 — Wages / Student Employment</option>
+                <option value="both">Both (Scholarship + Wages)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="treaty-result" id="treatyResult">
+            <h4 id="treatyResultTitle"></h4>
+            <p id="treatyResultDesc" style="font-size:14px;color:var(--text-muted);margin-bottom:12px;"></p>
+            <div class="treaty-detail" id="treatyDetailGrid"></div>
+            <div class="alert alert-info" style="margin-top:16px;">
+              <span class="alert-icon">📝</span>
+              <div id="treatyInstructions"></div>
+            </div>
+          </div>
+
+          <div class="no-treaty" id="noTreatyResult">
+            <h4>❌ No Treaty Benefit Found</h4>
+            <p id="noTreatyDesc" style="font-size:14px;margin-top:8px;"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-treaty-code16">
+        <h4 style="color:var(--primary);margin-bottom:4px;">Income Code 16 — Scholarship or Fellowship Grants</h4>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">These countries have treaty benefits that may exempt scholarship/fellowship income from U.S. tax.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Country</th><th>Max Years in U.S.</th><th>Treaty Article</th></tr></thead>
+            <tbody>
+              <tr><td>Bangladesh</td><td>2</td><td>21(2)</td></tr>
+              <tr><td>China, People's Republic of</td><td>No limit</td><td>20(b)</td></tr>
+              <tr><td>Cyprus</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Czech Republic</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Egypt</td><td>5</td><td>23(1)</td></tr>
+              <tr><td>Estonia</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>France</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Germany</td><td>No limit</td><td>20(3)</td></tr>
+              <tr><td>Iceland</td><td>5</td><td>19(1)</td></tr>
+              <tr><td>Indonesia</td><td>5</td><td>19(1)</td></tr>
+              <tr><td>Israel</td><td>5</td><td>24(1)</td></tr>
+              <tr><td>Kazakhstan</td><td>5</td><td>19(1)</td></tr>
+              <tr><td>Korea, South</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Latvia</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Lithuania</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Morocco</td><td>5</td><td>18(1)</td></tr>
+              <tr><td>Netherlands</td><td>3</td><td>22(2)</td></tr>
+              <tr><td>Norway</td><td>5</td><td>16(1)</td></tr>
+              <tr><td>Philippines</td><td>5</td><td>22(1)</td></tr>
+              <tr><td>Poland</td><td>5</td><td>18(1)</td></tr>
+              <tr><td>Portugal</td><td>5</td><td>23(1)</td></tr>
+              <tr><td>Romania</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Slovak Republic</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Slovenia</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Spain</td><td>5</td><td>22(1)</td></tr>
+              <tr><td>Thailand</td><td>5</td><td>22(1)</td></tr>
+              <tr><td>Trinidad and Tobago</td><td>5</td><td>19(1)</td></tr>
+              <tr><td>Tunisia</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Ukraine</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Venezuela</td><td>5</td><td>21(1)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-treaty-code20">
+        <h4 style="color:var(--primary);margin-bottom:4px;">Income Code 20 — Wages / Student Employment</h4>
+        <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">These countries have treaty benefits for student wages. The US-India treaty does NOT apply to Wisconsin wages.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Country</th><th>Annual Limit</th><th>Year Limit</th><th>Treaty Article</th></tr></thead>
+            <tbody>
+              <tr><td>Bangladesh</td><td>$8,000</td><td>No Limit</td><td>21(2)</td></tr>
+              <tr><td>Belgium</td><td>$9,000</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Bulgaria</td><td>$9,000</td><td>No Limit</td><td>19(1)</td></tr>
+              <tr><td>Canada</td><td>$10,000</td><td>5</td><td>XV</td></tr>
+              <tr><td>China, P.R.</td><td>$5,000</td><td>No Limit</td><td>20(c)</td></tr>
+              <tr><td>Cyprus</td><td>$2,000</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Czech Republic</td><td>$5,000</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Egypt</td><td>$3,000</td><td>5</td><td>23(1)</td></tr>
+              <tr><td>Estonia</td><td>$5,000</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>France</td><td>$5,000</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Germany</td><td>$9,000</td><td>4</td><td>20(4)</td></tr>
+              <tr><td>Iceland</td><td>$9,000</td><td>5</td><td>19(1)</td></tr>
+              <tr><td>Indonesia</td><td>$2,000</td><td>5</td><td>19</td></tr>
+              <tr><td>Israel</td><td>$3,000</td><td>5</td><td>24(1)</td></tr>
+              <tr><td>Korea</td><td>$2,000</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Latvia</td><td>$5,000</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Lithuania</td><td>$5,000</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Malta</td><td>$9,000</td><td>No Limit</td><td>20</td></tr>
+              <tr><td>Morocco</td><td>$2,000</td><td>5</td><td>18</td></tr>
+              <tr><td>Netherlands</td><td>$2,000</td><td>3</td><td>22(1)</td></tr>
+              <tr><td>Norway</td><td>$2,000</td><td>5</td><td>16(1)</td></tr>
+              <tr><td>Pakistan</td><td>$5,000</td><td>No Limit</td><td>XIII(1)</td></tr>
+              <tr><td>Philippines</td><td>$3,000</td><td>5</td><td>22(1)</td></tr>
+              <tr><td>Poland</td><td>$2,000</td><td>5</td><td>18(1)</td></tr>
+              <tr><td>Portugal</td><td>$5,000</td><td>5</td><td>23(1)</td></tr>
+              <tr><td>Romania</td><td>$2,000</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Slovak Republic</td><td>$5,000</td><td>5</td><td>21(1)</td></tr>
+              <tr><td>Slovenia</td><td>$5,000</td><td>5</td><td>20(1)</td></tr>
+              <tr><td>Spain</td><td>$5,000</td><td>5</td><td>22(1)</td></tr>
+              <tr><td>Thailand</td><td>$3,000</td><td>5</td><td>22(1)</td></tr>
+              <tr><td>Trinidad and Tobago</td><td>$2,000</td><td>5</td><td>19(1)</td></tr>
+              <tr><td>Tunisia</td><td>$4,000</td><td>5</td><td>20</td></tr>
+              <tr><td>Venezuela</td><td>$5,000</td><td>5</td><td>21(1)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="alert alert-warning" style="margin-top:12px;">
+          <span class="alert-icon">⚠️</span>
+          <div><strong>Wisconsin Note:</strong> The US-India treaty does NOT apply to Wisconsin wages. Treaty-exempt income for federal purposes is generally also exempt for Wisconsin, but the software may not adjust automatically — you may need to manually enter a negative adjustment.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5: FEDERAL RETURN ===== -->
+<section class="section" id="federal">
+  <div class="section-header">
+    <h2><span class="section-num">5</span> Federal Return — Form 1040-NR</h2>
+    <p>Step-by-step instructions for completing your U.S. federal nonresident alien tax return</p>
+  </div>
+  <div class="section-body">
+    <div class="alert alert-danger">
+      <span class="alert-icon">🚨</span>
+      <div><strong>Critical:</strong> You must file Form <strong>1040-NR</strong> — NOT the regular Form 1040. When using tax software, always select <strong>"Nonresident Alien"</strong> as your filing status. Filing the wrong form can affect your visa status.</div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Confirm Your Filing Status</h4>
+          <p>Select <strong>"Nonresident Alien"</strong> as your filing status in TaxSlayer. This generates Form 1040-NR. Most nonresident students file as <strong>Single</strong>. Do not select "Married Filing Jointly" unless you qualify for a rare exception.</p>
+          <div class="step-warning">Do NOT select "Single," "Married Filing Jointly," or any other status — you must specifically choose "Nonresident Alien."</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Enter Personal Information</h4>
+          <ul>
+            <li>Full legal name (as on passport)</li>
+            <li>SSN or ITIN</li>
+            <li>Date of birth</li>
+            <li>U.S. mailing address you can access</li>
+            <li>Select "Nonresident" for state residency status</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Enter W-2 Income</h4>
+          <p>Navigate to the W-2 section and click "Begin" or "Add W-2." Copy each box exactly as shown on your W-2. Leave blank boxes empty in the software.</p>
+          <ul>
+            <li><strong>Box 1:</strong> Wages, tips, other compensation</li>
+            <li><strong>Box 2:</strong> Federal income tax withheld</li>
+            <li><strong>Boxes 3–6:</strong> Social Security/Medicare — should be $0 for F-1/J-1 nonresidents</li>
+            <li><strong>Box 16–17:</strong> State wages and state tax withheld</li>
+          </ul>
+          <div class="step-tip">💡 If you have multiple W-2 forms, add each one separately.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Enter 1042-S (Scholarship/Treaty Income)</h4>
+          <p>Report only the <strong>taxable portion</strong> of scholarship income (housing, food, stipends). Use your school's breakdown to determine what is taxable. Tuition-only scholarships are not reported.</p>
+          <div class="step-tip">💡 If your employer already applied treaty benefits on your W-2 (reduced wages), do not apply them again on Schedule OI.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Complete Form 8843</h4>
+          <p>Navigate to <strong>Federal → Miscellaneous Forms → Form 8843</strong>. This form documents your exempt days in the U.S. and is required for all F-1/J-1 students.</p>
+          <ul>
+            <li>Enter your visa type and date of first entry in that status</li>
+            <li>Enter your passport number</li>
+            <li>Enter days in the U.S. that you can exclude (same count as Schedule OI)</li>
+            <li>Enter your school's name, address, phone, and official's name from your I-20/DS-2019</li>
+          </ul>
+          <div class="step-tip">💡 When using TaxSlayer FSA, Form 8843 is e-filed with your return — no need to mail it separately!</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <h4>Complete Schedule OI (Other Information)</h4>
+          <p>Navigate to <strong>Basic Information → Schedule OI</strong>. This schedule is required for most 1040-NR filers.</p>
+          <ul>
+            <li><strong>Items A &amp; B:</strong> Countries of citizenship and claimed residence</li>
+            <li><strong>Item E:</strong> U.S. visa type on the last day of the tax year</li>
+            <li><strong>Items G &amp; H:</strong> Entry/exit dates and total days present in the U.S. over the past 3 years</li>
+            <li><strong>Item L:</strong> Tax treaty exemption claims (if applicable)</li>
+          </ul>
+          <div class="step-tip">💡 Check your travel history at <a href="https://i94.cbp.dhs.gov/search/history-search" target="_blank" style="color:var(--primary);">i94.cbp.dhs.gov</a> to get accurate entry/exit dates.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">7</div>
+        <div class="step-content">
+          <h4>Deductions</h4>
+          <p>Most nonresident aliens <strong>cannot claim the standard deduction</strong>. You may only itemize deductions if you have qualifying expenses (e.g., donations to U.S.-qualified charities). Students from India may claim the standard deduction for federal purposes only.</p>
+          <div class="step-warning">Do not claim education credits (Form 1098-T is irrelevant), earned income credits, or other credits that are unavailable to nonresidents.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 6: WISCONSIN ===== -->
+<section class="section" id="wisconsin">
+  <div class="section-header">
+    <h2><span class="section-num">6</span> Wisconsin State Return — Form 1NPR</h2>
+    <p>Instructions for filing your Wisconsin nonresident income tax return</p>
+  </div>
+  <div class="section-body">
+    <div class="card-grid">
+      <div class="success-card">
+        <div class="card-icon">✅</div>
+        <h4 style="color:var(--green);margin-bottom:6px;">Must File 1NPR If:</h4>
+        <ul style="font-size:13px;padding-left:16px;line-height:2;">
+          <li>You earned wages for work performed in Wisconsin</li>
+          <li>Wisconsin-source income is <strong>$2,000 or more</strong> in 2025</li>
+          <li>Wisconsin income tax was withheld and you want a refund</li>
+        </ul>
+      </div>
+      <div class="warning-card">
+        <div class="card-icon">⚠️</div>
+        <h4 style="color:#856404;margin-bottom:6px;">Important Wisconsin Rules:</h4>
+        <ul style="font-size:13px;padding-left:16px;line-height:2;">
+          <li>Wisconsin taxes <strong>only Wisconsin-source income</strong> for nonresidents</li>
+          <li>You are always a <strong>Wisconsin Nonresident</strong> as an international student (cannot become domiciled in WI)</li>
+          <li><strong>No standard deduction</strong> — even for students from India</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="steps" style="margin-top:20px;">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Add Wisconsin State Return in TaxSlayer</h4>
+          <p>After completing your federal return, select <strong>"Add State Return"</strong> and choose <strong>"Wisconsin."</strong> The software will automatically generate Form 1NPR. Do NOT file Wisconsin Form 1 (the resident return).</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Confirm Nonresident Status</h4>
+          <p>Select <strong>"Nonresident of Wisconsin"</strong> in the software. Do not choose "resident" or "part-year resident." Even if you lived in Wisconsin all year, international students are treated as Wisconsin nonresidents.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Enter Wisconsin W-2 Information</h4>
+          <p>For each W-2, enter the Wisconsin-specific information:</p>
+          <ul>
+            <li><strong>Box 16:</strong> Wisconsin wages</li>
+            <li><strong>Box 17:</strong> Wisconsin income tax withheld</li>
+            <li>Employer's Wisconsin state ID number</li>
+          </ul>
+          <div class="step-tip">💡 Add each W-2 separately if you have more than one.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Adjust for Treaty Benefits (If Applicable)</h4>
+          <p>If your employer reduced taxable wages for treaty benefits, confirm this in your return. If not, you may need to <strong>manually enter a negative adjustment</strong> to exclude treaty-exempt wages from Wisconsin taxable income.</p>
+          <div class="step-warning">⚠️ The US-India treaty does NOT apply to Wisconsin wages. Tax software may not automatically adjust for treaty benefits — verify this carefully.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Wisconsin Ratio Calculation</h4>
+          <p>Form 1NPR taxes only Wisconsin income using the ratio: <strong>Wisconsin income ÷ Federal income</strong>. Before filing, ensure:</p>
+          <ul>
+            <li>Wisconsin income includes <strong>only Wisconsin-sourced income</strong></li>
+            <li>Treaty-exempt income is <strong>not included</strong> in Wisconsin taxable income</li>
+            <li>Interest income from regular U.S. bank accounts is <strong>not Wisconsin-source income</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin:20px 0 12px;color:var(--primary);">Wisconsin Income Treatment Summary</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Income Type</th><th>Wisconsin Taxable?</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Wages for work performed in Wisconsin</td><td><span class="tag tag-red">Taxable</span></td><td>Report Box 16 from W-2</td></tr>
+          <tr><td>Income exempt under U.S. tax treaty</td><td><span class="tag tag-green">Exempt</span></td><td>Also exempt for Wisconsin purposes</td></tr>
+          <tr><td>Interest from regular U.S. bank accounts</td><td><span class="tag tag-green">Exempt</span></td><td>Not Wisconsin-source income</td></tr>
+          <tr><td>Scholarships for tuition/required fees only</td><td><span class="tag tag-green">Exempt</span></td><td>Not taxable</td></tr>
+          <tr><td>Scholarship portion for services performed in WI</td><td><span class="tag tag-red">Taxable</span></td><td>Only service-related portion</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 7: TAXSLAYER WALKTHROUGH ===== -->
+<section class="section" id="taxslayer">
+  <div class="section-header">
+    <h2><span class="section-num">7</span> TaxSlayer FSA — Interactive Walkthrough</h2>
+    <p>Free tax filing for international students through the TaxSlayer FSA program, supported by UWGB VITA</p>
+  </div>
+  <div class="section-body">
+    <div class="card-grid">
+      <div class="success-card">
+        <div class="card-icon">🆓</div>
+        <h4 style="color:var(--green);margin-bottom:6px;">Why TaxSlayer FSA?</h4>
+        <ul style="font-size:13px;padding-left:16px;line-height:2;">
+          <li>Completely free for federal and state returns</li>
+          <li>E-files 1040-NR, Form 8843, and WI 1NPR together</li>
+          <li>No need to mail Form 8843 separately</li>
+          <li>Supported by UWGB VITA program</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">📧</div>
+        <h4>How to Get Access</h4>
+        <p>Visit <strong>uwgb.edu/vita</strong> to register. You will receive an email with a unique URL to access TaxSlayer FSA. Always start from the link in that email.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-viewer" id="taxslayerViewer">
+      <h3 style="color:var(--primary);margin-bottom:12px;">📸 TaxSlayer Step-by-Step Screenshots</h3>
+      <div class="screenshot-tabs" id="ssTabsContainer"></div>
+      <div id="ssPanelsContainer"></div>
+      <div class="screenshot-nav">
+        <button class="btn-nav" id="ssPrevBtn" onclick="navigateScreenshot(-1)" disabled>← Previous</button>
+        <span class="step-counter" id="ssCounter">Step 1 of 8</span>
+        <button class="btn-nav" id="ssNextBtn" onclick="navigateScreenshot(1)">Next →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 8: CHECKLIST ===== -->
+<section class="section" id="checklist">
+  <div class="section-header">
+    <h2><span class="section-num">8</span> Final Review Checklist</h2>
+    <p>Check off each item before submitting your return to ensure accuracy</p>
+  </div>
+  <div class="section-body">
+    <div class="checklist-progress">
+      <div class="checklist-progress-fill" id="checklistProgressFill" style="width:0%"></div>
+    </div>
+    <div class="checklist-label" id="checklistProgressLabel">0 of 16 items completed</div>
+
+    <div class="tab-container" style="margin-top:16px;">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="switchTab(this, 'tab-check-federal')">🇺🇸 Federal</button>
+        <button class="tab-btn" onclick="switchTab(this, 'tab-check-wi')">🏛️ Wisconsin</button>
+        <button class="tab-btn" onclick="switchTab(this, 'tab-check-save')">💾 After Filing</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-check-federal">
+        <ul class="checklist" id="federalChecklist">
+          <li><input type="checkbox" id="chk1" onchange="updateChecklist()"><label for="chk1">Federal return is <strong>Form 1040-NR</strong>, not Form 1040</label></li>
+          <li><input type="checkbox" id="chk2" onchange="updateChecklist()"><label for="chk2">Filing status is <strong>"Nonresident Alien"</strong></label></li>
+          <li><input type="checkbox" id="chk3" onchange="updateChecklist()"><label for="chk3">All W-2 entries (wages, withholding, employer info) match your forms exactly</label></li>
+          <li><input type="checkbox" id="chk4" onchange="updateChecklist()"><label for="chk4">1042-S income entered correctly — only taxable portion reported</label></li>
+          <li><input type="checkbox" id="chk5" onchange="updateChecklist()"><label for="chk5"><strong>Schedule OI</strong> is complete and accurate (citizenship, visa type, days in U.S.)</label></li>
+          <li><input type="checkbox" id="chk6" onchange="updateChecklist()"><label for="chk6"><strong>Form 8843</strong> is complete with school information</label></li>
+          <li><input type="checkbox" id="chk7" onchange="updateChecklist()"><label for="chk7">Tax treaty benefits are NOT applied twice (not on W-2 and Schedule OI)</label></li>
+          <li><input type="checkbox" id="chk8" onchange="updateChecklist()"><label for="chk8">No standard deduction claimed (unless you are a student from India)</label></li>
+          <li><input type="checkbox" id="chk9" onchange="updateChecklist()"><label for="chk9">No education credits or earned income credits claimed</label></li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="tab-check-wi">
+        <ul class="checklist" id="wiChecklist">
+          <li><input type="checkbox" id="chk10" onchange="updateChecklist()"><label for="chk10">Wisconsin form is labeled <strong>Form 1NPR</strong>, not Form 1</label></li>
+          <li><input type="checkbox" id="chk11" onchange="updateChecklist()"><label for="chk11">Residency status is <strong>"Nonresident of Wisconsin"</strong></label></li>
+          <li><input type="checkbox" id="chk12" onchange="updateChecklist()"><label for="chk12">Wisconsin wages and withholding match your W-2 (Boxes 16 &amp; 17)</label></li>
+          <li><input type="checkbox" id="chk13" onchange="updateChecklist()"><label for="chk13">Treaty-exempt income is <strong>not taxed</strong> by Wisconsin</label></li>
+          <li><input type="checkbox" id="chk14" onchange="updateChecklist()"><label for="chk14">No standard deduction claimed for Wisconsin (including students from India)</label></li>
+          <li><input type="checkbox" id="chk15" onchange="updateChecklist()"><label for="chk15">Ratio calculation uses only Wisconsin-sourced income</label></li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="tab-check-save">
+        <ul class="checklist" id="saveChecklist">
+          <li><input type="checkbox" id="chk16" onchange="updateChecklist()"><label for="chk16">Downloaded and saved <strong>PDF copies</strong> of both Form 1040-NR and Form 1NPR</label></li>
+          <li><input type="checkbox" id="chk17" onchange="updateChecklist()"><label for="chk17">Saved all original tax forms (W-2, 1042-S, 1099s)</label></li>
+          <li><input type="checkbox" id="chk18" onchange="updateChecklist()"><label for="chk18">Saved proof of e-filing acceptance (confirmation email/page)</label></li>
+          <li><input type="checkbox" id="chk19" onchange="updateChecklist()"><label for="chk19">Saved travel history and day-count notes</label></li>
+          <li><input type="checkbox" id="chk20" onchange="updateChecklist()"><label for="chk20">Saved payment confirmation if taxes were paid</label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alert alert-info" style="margin-top:16px;">
+      <span class="alert-icon">ℹ️</span>
+      <div><strong>After E-Filing:</strong> You will receive a notice that the IRS has accepted or rejected your return. Acceptance means it passed basic checks (name/SSN match, math correct) — it does NOT mean the IRS agrees your return is correct. The IRS may send a letter requesting additional information and has up to 3 years to review your return.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== SECTION 9: FICA EXEMPTION & REFUND ===== -->
+<section class="section" id="fica">
+  <div class="section-header">
+    <h2><span class="section-num">9</span> FICA Exemption &amp; Refund (Forms 843 &amp; 8316)</h2>
+    <p>Social Security and Medicare tax exemption for nonresident alien students — and how to claim a refund if taxes were withheld in error</p>
+  </div>
+  <div class="section-body">
+
+    <!-- What is FICA -->
+    <div class="info-box" style="background:var(--blue-bg);border:1px solid #c5d5f5;border-radius:var(--radius);padding:20px;margin-bottom:24px;">
+      <h3 style="color:var(--primary);font-size:17px;margin-bottom:12px;">💡 What is FICA?</h3>
+      <p style="margin-bottom:10px;font-size:14px;"><strong>FICA</strong> (Federal Insurance Contributions Act) consists of two payroll taxes automatically withheld from wages:</p>
+      <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
+        <div class="info-card">
+          <div class="card-icon">🏛️</div>
+          <h4>Social Security Tax</h4>
+          <p><strong>6.2%</strong> of wages (up to the annual wage base limit — $176,100 for 2025). Funds retirement and disability benefits.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🏥</div>
+          <h4>Medicare Tax</h4>
+          <p><strong>1.45%</strong> of all wages (no wage cap). Funds Medicare health insurance for seniors. An additional 0.9% applies above $200,000.</p>
+        </div>
+      </div>
+      <div class="warning-card" style="margin-top:16px;">
+        <p style="font-size:13px;"><strong>⚠️ Total FICA = 7.65%</strong> of your wages. Employers match this amount. As a nonresident alien student, you are generally <strong>exempt</strong> from this tax — meaning you should take home more of your paycheck.</p>
+      </div>
+    </div>
+
+    <!-- Eligibility -->
+    <h3 style="color:var(--primary);font-size:18px;margin:24px 0 12px;border-bottom:2px solid var(--border);padding-bottom:8px;">✅ Who Is Exempt from FICA?</h3>
+    <p style="font-size:14px;margin-bottom:16px;">Under <strong>IRC Section 3121(b)(19)</strong>, nonresident alien students on certain visa types are exempt from FICA taxes. All three conditions below must be met:</p>
+
+    <div class="card-grid" style="grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px;">
+      <div class="success-card">
+        <div style="font-size:22px;margin-bottom:8px;">📋</div>
+        <h4 style="font-size:14px;color:var(--green);margin-bottom:6px;">Condition 1: Visa Type</h4>
+        <p style="font-size:13px;">Must hold an <strong>F-1, J-1, M-1, or Q-1</strong> nonimmigrant visa</p>
+      </div>
+      <div class="success-card">
+        <div style="font-size:22px;margin-bottom:8px;">🌍</div>
+        <h4 style="font-size:14px;color:var(--green);margin-bottom:6px;">Condition 2: Tax Residency</h4>
+        <p style="font-size:13px;">Must be a <strong>nonresident alien</strong> for U.S. tax purposes (generally the first 5 calendar years for F-1/J-1 students)</p>
+      </div>
+      <div class="success-card">
+        <div style="font-size:22px;margin-bottom:8px;">💼</div>
+        <h4 style="font-size:14px;color:var(--green);margin-bottom:6px;">Condition 3: Authorized Work</h4>
+        <p style="font-size:13px;">Must be performing services <strong>authorized by USCIS</strong> and consistent with the purpose of the visa</p>
+      </div>
+    </div>
+
+    <!-- Exempt employment types -->
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Employment Type</th>
+            <th>FICA Exempt?</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>On-campus employment (up to 20 hrs/week, 40 hrs during breaks)</td>
+            <td><span class="tag tag-green">✅ Exempt</span></td>
+            <td>Most common for F-1/J-1 students</td>
+          </tr>
+          <tr>
+            <td>Off-campus employment under CPT (Curricular Practical Training)</td>
+            <td><span class="tag tag-green">✅ Exempt</span></td>
+            <td>Must be authorized on I-20</td>
+          </tr>
+          <tr>
+            <td>Off-campus employment under OPT (Optional Practical Training)</td>
+            <td><span class="tag tag-green">✅ Exempt</span></td>
+            <td>Must have valid EAD card; employer may not be aware</td>
+          </tr>
+          <tr>
+            <td>J-1 Research Scholar / Professor employment</td>
+            <td><span class="tag tag-green">✅ Exempt</span></td>
+            <td>Exempt for first 2 calendar years</td>
+          </tr>
+          <tr>
+            <td>Employment by a school where you are enrolled at least half-time</td>
+            <td><span class="tag tag-green">✅ Exempt</span></td>
+            <td>IRC §3121(b)(10) student FICA exemption</td>
+          </tr>
+          <tr>
+            <td>F-2, J-2, M-2 visa holders (spouse/children)</td>
+            <td><span class="tag tag-red">❌ Not Exempt</span></td>
+            <td>Dependent visa holders are NOT exempt</td>
+          </tr>
+          <tr>
+            <td>F-1/J-1 students who have become resident aliens (5+ years)</td>
+            <td><span class="tag tag-red">❌ Not Exempt</span></td>
+            <td>Once you pass the Substantial Presence Test, FICA applies</td>
+          </tr>
+          <tr>
+            <td>H-1B, H-4, L-1, O-1 visa holders</td>
+            <td><span class="tag tag-red">❌ Not Exempt</span></td>
+            <td>These visa categories are subject to FICA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- FICA Exemption Checker Tool -->
+    <div style="background:linear-gradient(135deg,#1a3a6b,#2a5298);border-radius:var(--radius-lg);padding:24px;margin:24px 0;color:white;">
+      <h3 style="font-size:18px;margin-bottom:6px;">🔍 FICA Exemption Checker</h3>
+      <p style="font-size:13px;opacity:0.85;margin-bottom:20px;">Answer the questions below to determine if you qualify for the FICA exemption</p>
+      <div style="display:grid;gap:14px;">
+        <div>
+          <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">1. What is your current visa type?</label>
+          <select id="ficaVisa" style="width:100%;padding:10px 14px;border-radius:8px;border:none;font-size:14px;background:white;color:#212529;">
+            <option value="">-- Select visa type --</option>
+            <option value="f1">F-1 (Student)</option>
+            <option value="j1_student">J-1 (Student)</option>
+            <option value="j1_scholar">J-1 (Research Scholar / Professor)</option>
+            <option value="m1">M-1 (Vocational Student)</option>
+            <option value="f2_j2">F-2 / J-2 / M-2 (Dependent)</option>
+            <option value="h1b">H-1B / H-4 / L-1 / O-1 (Work Visa)</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div id="ficaYearsGroup" style="display:none;">
+          <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">2. How many calendar years have you been in the U.S. on this visa?</label>
+          <select id="ficaYears" style="width:100%;padding:10px 14px;border-radius:8px;border:none;font-size:14px;background:white;color:#212529;">
+            <option value="">-- Select --</option>
+            <option value="1">1st year</option>
+            <option value="2">2nd year</option>
+            <option value="3">3rd year</option>
+            <option value="4">4th year</option>
+            <option value="5">5th year</option>
+            <option value="6plus">6th year or more</option>
+          </select>
+        </div>
+        <div id="ficaWorkGroup" style="display:none;">
+          <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">3. What type of employment?</label>
+          <select id="ficaWork" style="width:100%;padding:10px 14px;border-radius:8px;border:none;font-size:14px;background:white;color:#212529;">
+            <option value="">-- Select --</option>
+            <option value="oncampus">On-campus employment</option>
+            <option value="cpt">Off-campus CPT (Curricular Practical Training)</option>
+            <option value="opt">Off-campus OPT (Optional Practical Training)</option>
+            <option value="unauthorized">Other / Unauthorized employment</option>
+          </select>
+        </div>
+        <button onclick="checkFICAExemption()" style="background:#c8102e;color:white;border:none;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;width:fit-content;">🔍 Check My FICA Status</button>
+      </div>
+      <div id="ficaResult" style="display:none;margin-top:20px;background:rgba(255,255,255,0.12);border-radius:10px;padding:18px;">
+        <div id="ficaResultContent"></div>
+      </div>
+    </div>
+
+    <!-- What to do if FICA was withheld -->
+    <h3 style="color:var(--primary);font-size:18px;margin:28px 0 12px;border-bottom:2px solid var(--border);padding-bottom:8px;">⚠️ What If FICA Was Withheld From Your Paycheck?</h3>
+    <p style="font-size:14px;margin-bottom:16px;">If you are exempt but your employer withheld Social Security or Medicare taxes, you have two options:</p>
+
+    <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;">
+      <div style="background:#e8f5ed;border:1px solid #a3d9b1;border-radius:var(--radius);padding:20px;">
+        <div style="font-size:24px;margin-bottom:10px;">🏢</div>
+        <h4 style="color:var(--green);font-size:15px;margin-bottom:8px;">Option 1: Request Refund from Employer (Try First)</h4>
+        <p style="font-size:13px;margin-bottom:10px;">Contact your employer's payroll department and explain that you are a nonresident alien student exempt from FICA under IRC §3121(b)(19). Ask them to issue a corrected W-2 and refund the withheld amount.</p>
+        <p style="font-size:13px;"><strong>✅ Faster and simpler</strong> — employer can correct directly on their payroll tax returns (Form 941-X).</p>
+      </div>
+      <div style="background:#fff3cd;border:1px solid #ffc107;border-radius:var(--radius);padding:20px;">
+        <div style="font-size:24px;margin-bottom:10px;">📬</div>
+        <h4 style="color:#856404;font-size:15px;margin-bottom:8px;">Option 2: File Forms 843 &amp; 8316 with the IRS</h4>
+        <p style="font-size:13px;margin-bottom:10px;">If the employer refuses or is unable to provide a refund, file directly with the IRS using <strong>Form 843</strong> (Claim for Refund) and <strong>Form 8316</strong> (Information Regarding Request for Refund of Social Security Tax).</p>
+        <p style="font-size:13px;"><strong>⏱ Takes 3–6 months</strong> — wait at least 60 days before contacting the IRS about status.</p>
+      </div>
+    </div>
+
+    <!-- Form 843 Section -->
+    <div style="border:2px solid var(--primary);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:24px;">
+      <div style="background:var(--primary);color:white;padding:16px 20px;display:flex;align-items:center;gap:12px;">
+        <span style="font-size:24px;">📋</span>
+        <div>
+          <h3 style="font-size:17px;margin:0;">Form 843 — Claim for Refund and Request for Abatement</h3>
+          <p style="font-size:12px;opacity:0.85;margin:2px 0 0;">IRS Form 843 (Rev. December 2024) | Download: <a href="https://www.irs.gov/pub/irs-pdf/f843.pdf" target="_blank" style="color:#ffd700;">irs.gov/pub/irs-pdf/f843.pdf</a></p>
+        </div>
+      </div>
+      <div style="padding:20px;">
+        <p style="font-size:14px;margin-bottom:16px;">Form 843 is the primary IRS form used to claim a refund of Social Security and Medicare taxes that were withheld in error. Complete it carefully — errors can delay your refund.</p>
+
+        <h4 style="color:var(--primary);font-size:15px;margin-bottom:12px;">📝 Line-by-Line Instructions for FICA Refund</h4>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Header — Check the Correct Box</h4>
+              <p style="font-size:13px;">At the top of Form 843, check the box: <em>"A refund to an employee of social security, Medicare, or RRTA tax that was withheld in error but only if your employer will not adjust the overcollection."</em></p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Name &amp; TIN</h4>
+              <p style="font-size:13px;">Enter your full legal name and your <strong>SSN or ITIN</strong>. If you do not have an SSN, use your ITIN. If you have neither, apply for an ITIN using Form W-7 before filing.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Line 1 — Tax Period</h4>
+              <p style="font-size:13px;">Enter the tax year for which you are claiming the refund (e.g., <strong>01/01/2025</strong> to <strong>12/31/2025</strong>). File a <strong>separate Form 843 for each tax year</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>Line 2 — Amount of Refund</h4>
+              <p style="font-size:13px;">Enter the <strong>total dollar amount</strong> of Social Security and/or Medicare taxes withheld in error. Find this on your W-2:</p>
+              <div class="table-wrap" style="margin-top:8px;">
+                <table>
+                  <thead><tr><th>W-2 Box</th><th>Description</th><th>Tax Rate</th></tr></thead>
+                  <tbody>
+                    <tr><td><strong>Box 4</strong></td><td>Social Security tax withheld</td><td>6.2% of Box 3</td></tr>
+                    <tr><td><strong>Box 6</strong></td><td>Medicare tax withheld</td><td>1.45% of Box 5</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p style="font-size:13px;margin-top:8px;">Add Box 4 + Box 6 for your total FICA withheld. Claim <strong>only your employee share</strong> (not the employer's matching portion).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <h4>Line 3 — Date of Payment</h4>
+              <p style="font-size:13px;">Enter the date(s) the taxes were paid (withheld from your paycheck). If multiple dates, list them or attach a separate sheet. You can use the pay period end dates from your pay stubs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">6</div>
+            <div class="step-content">
+              <h4>Line 4 — Type of Tax</h4>
+              <p style="font-size:13px;">Check <strong>Box a: "Employment"</strong> tax.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">7</div>
+            <div class="step-content">
+              <h4>Line 5 — Type of Return</h4>
+              <p style="font-size:13px;">Check <strong>Box i: "1040"</strong> (this covers Form 1040-NR as well).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">8</div>
+            <div class="step-content">
+              <h4>Line 7 — Reason for Refund</h4>
+              <p style="font-size:13px;">Check <strong>Box d: "Other"</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">9</div>
+            <div class="step-content">
+              <h4>Line 8 — Explanation</h4>
+              <p style="font-size:13px;">Write a clear explanation. Use this template:</p>
+              <div style="background:#f8f9fa;border-left:4px solid var(--primary);padding:14px;border-radius:0 8px 8px 0;font-size:13px;font-family:monospace;line-height:1.6;margin-top:8px;">
+                "I am a nonresident alien for U.S. tax purposes under IRC §7701(b). I am present in the United States on an [F-1 / J-1] visa and have been in the U.S. for less than 5 calendar years. Under IRC §3121(b)(19), wages paid to me for services performed in the U.S. are exempt from Social Security and Medicare taxes. My employer erroneously withheld $[amount] in Social Security tax (W-2 Box 4) and $[amount] in Medicare tax (W-2 Box 6) for tax year [YYYY]. I am requesting a refund of $[total] in FICA taxes withheld in error."
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">10</div>
+            <div class="step-content">
+              <h4>Signature</h4>
+              <p style="font-size:13px;">Sign and date the form. If a paid preparer completes it, they must also sign.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form 8316 Section -->
+    <div style="border:2px solid var(--accent);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:24px;">
+      <div style="background:var(--accent);color:white;padding:16px 20px;display:flex;align-items:center;gap:12px;">
+        <span style="font-size:24px;">📄</span>
+        <div>
+          <h3 style="font-size:17px;margin:0;">Form 8316 — Information Regarding Request for Refund of Social Security Tax</h3>
+          <p style="font-size:12px;opacity:0.85;margin:2px 0 0;">Required for F, J, or M visa holders | Download: <a href="https://www.irs.gov/pub/irs-pdf/f8316.pdf" target="_blank" style="color:#ffd700;">irs.gov/pub/irs-pdf/f8316.pdf</a></p>
+        </div>
+      </div>
+      <div style="padding:20px;">
+        <p style="font-size:14px;margin-bottom:16px;"><strong>Form 8316 must be filed together with Form 843</strong> if you hold an F, J, or M visa. It provides the IRS with additional information to verify your eligibility for the Social Security tax refund.</p>
+
+        <h4 style="color:var(--accent);font-size:15px;margin-bottom:12px;">📝 How to Complete Form 8316</h4>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Field</th><th>What to Enter</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Name</strong></td><td>Your full legal name as it appears on your passport</td></tr>
+              <tr><td><strong>SSN / ITIN</strong></td><td>Your Social Security Number or Individual Taxpayer Identification Number</td></tr>
+              <tr><td><strong>Tax Year</strong></td><td>The calendar year for which you are claiming the refund (e.g., 2025)</td></tr>
+              <tr><td><strong>Employer Name &amp; EIN</strong></td><td>Name and Employer Identification Number from your W-2 (Box b)</td></tr>
+              <tr><td><strong>Amount of SS Tax Withheld</strong></td><td>Amount from W-2 Box 4 (Social Security tax withheld)</td></tr>
+              <tr><td><strong>Visa Type</strong></td><td>Check the appropriate box: F-1, J-1, J-2, M-1, or other F/J/M type</td></tr>
+              <tr><td><strong>Visa Expiration Date</strong></td><td>Date shown on your visa stamp in your passport</td></tr>
+              <tr><td><strong>Country of Citizenship</strong></td><td>Your country of citizenship as shown on your passport</td></tr>
+              <tr><td><strong>Statement</strong></td><td>Certify that you have not applied for or received a refund from your employer for the same amount</td></tr>
+              <tr><td><strong>Signature &amp; Date</strong></td><td>Sign and date the form under penalty of perjury</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="warning-card" style="margin-top:16px;">
+          <p style="font-size:13px;"><strong>⚠️ Important:</strong> Form 8316 only covers the <strong>Social Security tax (6.2%)</strong> portion. The Medicare tax refund (1.45%) is claimed solely through Form 843. If both were withheld in error, include both amounts on Form 843 Line 2, and attach Form 8316 for the Social Security portion.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Required Documents -->
+    <h3 style="color:var(--primary);font-size:18px;margin:28px 0 12px;border-bottom:2px solid var(--border);padding-bottom:8px;">📎 Required Documents to Attach</h3>
+    <p style="font-size:14px;margin-bottom:16px;">Attach all of the following documents to your Forms 843 and 8316 when mailing to the IRS:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>Document</th><th>Purpose</th><th>Required?</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>Form W-2</strong></td>
+            <td>Proves the amount of Social Security and Medicare taxes withheld (Boxes 4 and 6)</td>
+            <td><span class="tag tag-red">Required</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>Copy of visa</strong></td>
+            <td>Proves your F-1, J-1, or M-1 nonimmigrant status</td>
+            <td><span class="tag tag-red">Required</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><strong>Form I-94 (Arrival/Departure Record)</strong></td>
+            <td>Proves your dates of arrival and departure from the U.S. Print from i94.cbp.dhs.gov</td>
+            <td><span class="tag tag-red">Required</span></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>Form I-20</strong> (F-1 students)</td>
+            <td>Confirms your enrollment status and authorized employment (CPT/OPT authorization)</td>
+            <td><span class="tag tag-yellow">F-1 Only</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><strong>Form DS-2019</strong> (J-1 students)</td>
+            <td>Confirms your J-1 exchange visitor program and authorized activities</td>
+            <td><span class="tag tag-yellow">J-1 Only</span></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><strong>EAD Card</strong> (if on OPT/CPT)</td>
+            <td>Employment Authorization Document — proves authorization for off-campus work (Form I-766 or I-688B)</td>
+            <td><span class="tag tag-yellow">OPT/CPT Only</span></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><strong>Employer Statement</strong></td>
+            <td>Statement from employer confirming the amount withheld and that they will not issue a refund. If unavailable, write your own statement explaining why you cannot obtain one.</td>
+            <td><span class="tag tag-yellow">If Applicable</span></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><strong>Pay stubs</strong> (if exempt for only part of year)</td>
+            <td>Shows the specific pay periods when FICA was withheld during the exempt period</td>
+            <td><span class="tag tag-blue">If Applicable</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Where to Mail -->
+    <h3 style="color:var(--primary);font-size:18px;margin:28px 0 12px;border-bottom:2px solid var(--border);padding-bottom:8px;">📬 Where to Mail Your Forms</h3>
+    <div class="card-grid" style="grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+      <div style="background:var(--blue-bg);border:1px solid #c5d5f5;border-radius:var(--radius);padding:20px;">
+        <h4 style="color:var(--primary);font-size:14px;margin-bottom:12px;">📮 Mailing Address (Per IRS Publication 519)</h4>
+        <div style="font-family:monospace;font-size:13px;background:white;padding:14px;border-radius:8px;line-height:1.8;">
+          Department of the Treasury<br>
+          Internal Revenue Service Center<br>
+          <strong>Ogden, UT 84201-0038</strong>
+        </div>
+        <p style="font-size:12px;color:var(--text-muted);margin-top:10px;">Mail Forms 843 + 8316 + all attachments in a single envelope. Do <strong>not</strong> include with your 1040-NR return — mail separately.</p>
+      </div>
+      <div style="background:#fff3cd;border:1px solid #ffc107;border-radius:var(--radius);padding:20px;">
+        <h4 style="color:#856404;font-size:14px;margin-bottom:12px;">⚠️ Important Mailing Tips</h4>
+        <ul style="font-size:13px;padding-left:18px;line-height:2;">
+          <li>Send via <strong>certified mail with return receipt</strong> (USPS) to have proof of delivery</li>
+          <li>Keep <strong>copies of all documents</strong> before mailing</li>
+          <li>Mail <strong>separately</strong> from your 1040-NR income tax return</li>
+          <li>File a <strong>separate Form 843 for each tax year</strong></li>
+          <li>Must be filed within <strong>3 years</strong> of the original return due date or <strong>2 years</strong> from the date taxes were paid, whichever is later</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <h3 style="color:var(--primary);font-size:18px;margin:28px 0 12px;border-bottom:2px solid var(--border);padding-bottom:8px;">⏱ Timeline &amp; What to Expect</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num" style="background:var(--green);">1</div>
+        <div class="step-content">
+          <h4>Step 1: Contact Your Employer First</h4>
+          <p style="font-size:13px;">Notify your employer's payroll department of the error. Provide a copy of your visa and I-20/DS-2019. Give them 2–4 weeks to respond. If they agree to refund, you are done — no IRS filing needed.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:var(--green);">2</div>
+        <div class="step-content">
+          <h4>Step 2: Gather All Documents</h4>
+          <p style="font-size:13px;">Collect your W-2, visa copy, I-94 printout, I-20 or DS-2019, and any employer statement. Make photocopies of everything — keep originals.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:var(--green);">3</div>
+        <div class="step-content">
+          <h4>Step 3: Complete Forms 843 and 8316</h4>
+          <p style="font-size:13px;">Download both forms from IRS.gov. Complete Form 843 first, then Form 8316. Use the line-by-line instructions above. Write your explanation on Line 8 of Form 843.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:var(--green);">4</div>
+        <div class="step-content">
+          <h4>Step 4: Mail to IRS</h4>
+          <p style="font-size:13px;">Mail the completed forms with all attachments to the Ogden, UT address via certified mail. Keep the tracking number and a copy of everything sent.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:var(--yellow);">5</div>
+        <div class="step-content">
+          <h4>Step 5: Wait 60–180 Days</h4>
+          <p style="font-size:13px;">The IRS typically takes <strong>3 to 6 months</strong> to process FICA refund claims. Do not contact the IRS until at least 60 days have passed. You can check refund status by calling <strong>1-800-829-1040</strong> after 60 days.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num" style="background:var(--green);">6</div>
+        <div class="step-content">
+          <h4>Step 6: Receive Refund Check</h4>
+          <p style="font-size:13px;">The IRS will mail a refund check to the address on your Form 843. If your address changes, file Form 8822 to update it. The refund is <strong>not taxable income</strong> — do not report it on your next year's return.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wisconsin Note -->
+    <div style="background:linear-gradient(135deg,#1a3a6b,#2a5298);border-radius:var(--radius);padding:20px;color:white;margin-top:24px;">
+      <h4 style="font-size:15px;margin-bottom:10px;">🏛️ Wisconsin State Note on FICA</h4>
+      <p style="font-size:13px;opacity:0.9;">Wisconsin does <strong>not</strong> impose its own Social Security or Medicare tax — FICA is a federal-only tax. The FICA exemption and refund process described above applies only to federal taxes. Your Wisconsin Form 1NPR is not affected by FICA withholding errors. However, if you receive a FICA refund in a future year, it is not considered Wisconsin taxable income.</p>
+    </div>
+
+    <!-- FAQ -->
+    <h3 style="color:var(--primary);font-size:18px;margin:28px 0 12px;border-bottom:2px solid var(--border);padding-bottom:8px;">❓ Frequently Asked Questions</h3>
+    <div style="display:grid;gap:12px;">
+      <details style="background:var(--gray-bg);border-radius:var(--radius);padding:16px;border:1px solid var(--border);">
+        <summary style="font-weight:700;font-size:14px;cursor:pointer;color:var(--primary);">Can I claim a FICA refund for multiple years at once?</summary>
+        <p style="font-size:13px;margin-top:10px;color:var(--text);">No. You must file a <strong>separate Form 843 for each tax year</strong>. However, you can mail multiple Form 843s in the same envelope. The statute of limitations is 3 years from the return due date or 2 years from the payment date, whichever is later.</p>
+      </details>
+      <details style="background:var(--gray-bg);border-radius:var(--radius);padding:16px;border:1px solid var(--border);">
+        <summary style="font-weight:700;font-size:14px;cursor:pointer;color:var(--primary);">My employer says they already paid the FICA taxes to the IRS. Can I still get a refund?</summary>
+        <p style="font-size:13px;margin-top:10px;color:var(--text);">Yes. Even if your employer has already remitted the taxes to the IRS, you can still file Form 843 and Form 8316 to claim your employee's share directly from the IRS. The employer's portion is a separate matter between the employer and the IRS.</p>
+      </details>
+      <details style="background:var(--gray-bg);border-radius:var(--radius);padding:16px;border:1px solid var(--border);">
+        <summary style="font-weight:700;font-size:14px;cursor:pointer;color:var(--primary);">I don't have an SSN — can I still file for a FICA refund?</summary>
+        <p style="font-size:13px;margin-top:10px;color:var(--text);">Yes, but you need a Taxpayer Identification Number. Apply for an <strong>ITIN (Form W-7)</strong> if you are not eligible for an SSN. Once you receive your ITIN, use it on Form 843 and Form 8316. Note: You cannot claim a FICA refund without a TIN.</p>
+      </details>
+      <details style="background:var(--gray-bg);border-radius:var(--radius);padding:16px;border:1px solid var(--border);">
+        <summary style="font-weight:700;font-size:14px;cursor:pointer;color:var(--primary);">Does the FICA refund affect my 1040-NR income tax return?</summary>
+        <p style="font-size:13px;margin-top:10px;color:var(--text);">No. FICA taxes (Social Security and Medicare) are separate from federal income tax. The Form 843/8316 refund process is completely independent of your 1040-NR filing. Do not include FICA refund claims on your 1040-NR. File them separately.</p>
+      </details>
+      <details style="background:var(--gray-bg);border-radius:var(--radius);padding:16px;border:1px solid var(--border);">
+        <summary style="font-weight:700;font-size:14px;cursor:pointer;color:var(--primary);">I became a resident alien during the year. Am I exempt for the whole year?</summary>
+        <p style="font-size:13px;margin-top:10px;color:var(--text);">No. The FICA exemption only applies during the period when you were a nonresident alien. If you became a resident alien partway through the year (e.g., you passed the Substantial Presence Test), FICA applies from that date forward. You can only claim a refund for the portion of the year when you were a nonresident alien and FICA was withheld in error.</p>
+      </details>
+      <details style="background:var(--gray-bg);border-radius:var(--radius);padding:16px;border:1px solid var(--border);">
+        <summary style="font-weight:700;font-size:14px;cursor:pointer;color:var(--primary);">Can UWGB VITA help me file Forms 843 and 8316?</summary>
+        <p style="font-size:13px;margin-top:10px;color:var(--text);">VITA programs primarily assist with income tax returns (Form 1040-NR). Forms 843 and 8316 are refund claims, not income tax returns, so they fall outside the standard VITA scope. However, VITA volunteers can provide guidance on the process. For complex situations, consult a qualified tax professional or contact the IRS directly at 1-800-829-1040.</p>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SECTION 10: RESOURCES ===== -->
+<section class="section" id="resources">
+  <div class="section-header">
+    <h2><span class="section-num">10</span> Resources &amp; References</h2>
+    <p>Official IRS and Wisconsin DOR publications for international students</p>
+  </div>
+  <div class="section-body">
+    <div class="resource-grid">
+      <a href="https://www.irs.gov/pub/irs-pdf/p4011.pdf" target="_blank" class="resource-card">
+        <div class="res-icon">📘</div>
+        <h4>IRS Publication 4011</h4>
+        <p>VITA/TCE Foreign Student and Scholar Volunteer Resource Guide — primary reference for VITA volunteers</p>
+      </a>
+      <a href="https://www.irs.gov/pub/irs-pdf/p4152.pdf" target="_blank" class="resource-card">
+        <div class="res-icon">💻</div>
+        <h4>IRS Publication 4152</h4>
+        <p>Electronic Toolkit for Nonresident Alien VITA/TCE Sites — software guidance</p>
+      </a>
+      <a href="https://www.irs.gov/publications/p519" target="_blank" class="resource-card">
+        <div class="res-icon">📗</div>
+        <h4>IRS Publication 519</h4>
+        <p>U.S. Tax Guide for Aliens — comprehensive guide covering residency, income, deductions, and credits</p>
+      </a>
+      <a href="https://www.irs.gov/publications/p901" target="_blank" class="resource-card">
+        <div class="res-icon">🌐</div>
+        <h4>IRS Publication 901</h4>
+        <p>U.S. Tax Treaties — complete list of all U.S. tax treaties and their provisions</p>
+      </a>
+      <a href="https://www.revenue.wi.gov/DOR%20Publications/pb122.pdf" target="_blank" class="resource-card">
+        <div class="res-icon">🏛️</div>
+        <h4>Wisconsin Publication 122</h4>
+        <p>Tax Information for Part-Year Residents and Nonresidents of Wisconsin (Including Information for Aliens)</p>
+      </a>
+      <a href="https://www.revenue.wi.gov/TaxForms2024/2024-Form1NPR-inst.pdf" target="_blank" class="resource-card">
+        <div class="res-icon">📋</div>
+        <h4>Wisconsin 1NPR Instructions</h4>
+        <p>Official instructions for completing Wisconsin Form 1NPR — Nonresident &amp; Part-Year Resident Income Tax</p>
+      </a>
+      <a href="https://i94.cbp.dhs.gov/search/history-search" target="_blank" class="resource-card">
+        <div class="res-icon">✈️</div>
+        <h4>CBP I-94 Travel History</h4>
+        <p>Official U.S. Customs and Border Protection portal to view your arrival and departure records</p>
+      </a>
+      <a href="https://www.uwgb.edu/vita/" target="_blank" class="resource-card">
+        <div class="res-icon">🎓</div>
+        <h4>UWGB VITA Program</h4>
+        <p>Free tax preparation assistance for international students. Schedule appointments and access TaxSlayer FSA</p>
+      </a>
+    </div>
+
+    <div class="alert alert-success" style="margin-top:16px;">
+      <span class="alert-icon">📞</span>
+      <div>
+        <strong>UWGB VITA Contact Information:</strong><br>
+        Email: <a href="mailto:VITA@uwgb.edu" style="color:var(--green);">VITA@uwgb.edu</a> &nbsp;|&nbsp;
+        Text: 920-785-8878 &nbsp;|&nbsp;
+        Virtual Appointments: M/W/F 6–8pm &nbsp;|&nbsp;
+        Website: <a href="https://www.uwgb.edu/vita/" target="_blank" style="color:var(--green);">uwgb.edu/vita</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p><strong>International Student Tax Filing Guide</strong> | Prepared by UWGB VITA Program</p>
+  <p style="margin-top:8px;">This guide is for informational purposes only. Each taxpayer is responsible for their own tax compliance. For complex situations, consult a qualified tax professional.</p>
+  <p style="margin-top:8px;"><a href="https://www.irs.gov" target="_blank">IRS.gov</a> &nbsp;|&nbsp; <a href="https://www.revenue.wi.gov" target="_blank">Wisconsin DOR</a> &nbsp;|&nbsp; <a href="https://www.uwgb.edu/vita/" target="_blank">UWGB VITA</a></p>
+</footer>
+
+
+<!-- ===== JAVASCRIPT ===== -->
+<script src="assets/slides-data.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
