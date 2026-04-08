@@ -60,7 +60,7 @@
   <div class="hero-badges">
     <span class="badge">📅 Tax Year 2025</span>
     <span class="badge">🎓 F-1 &amp; J-1 Visas</span>
-    <span class="badge">Federal 1040-NR</span>
+    <span class="badge">🇺🇸 Federal 1040-NR</span>
     <span class="badge">🏛️ Wisconsin 1NPR</span>
     <span class="badge">💻 Free Filing Options</span>
     <span class="badge">⚠️ Complex Situations</span>
@@ -119,7 +119,7 @@
       <div class="info-card">
         <div class="card-icon">📅</div>
         <h4>Filing Deadline</h4>
-        <p>April 15 for those with U.S. income. June 15 for Form 8843 only (no income).</p>
+        <p>April 15 for those with U.S. income. June 15 for paper-filed Form 8843 only (no income). If filing electronically with no income, the standard April 15 deadline applies.</p>
       </div>
       <div class="info-card">
         <div class="card-icon">📝</div>
@@ -129,7 +129,7 @@
       <div class="info-card">
         <div class="card-icon">🏛️</div>
         <h4>State Return</h4>
-        <p>Wisconsin residents also file <strong>Form 1NPR</strong> for Wisconsin-source income.</p>
+        <p>Wisconsin nonresidents (including international students) also file <strong>Form 1NPR</strong> for Wisconsin-source income.</p>
       </div>
       <div class="info-card">
         <div class="card-icon">📋</div>
@@ -149,7 +149,7 @@
         <thead><tr><th>Situation</th><th>Federal Forms Required</th><th>Wisconsin Form</th><th>Deadline</th></tr></thead>
         <tbody>
           <tr><td>No U.S. income (F-1/J-1)</td><td>Form 8843 only</td><td>Not required</td><td>June 15</td></tr>
-          <tr><td>Has U.S. wages (W-2)</td><td>Form 1040-NR + Form 8843</td><td>Form 1NPR (if WI wages ≥ $2,000)</td><td>April 15</td></tr>
+          <tr><td>Has U.S. wages (W-2)</td><td>Form 1040-NR + Form 8843</td><td>Form 1NPR (if gross WI-source income ≥ $2,000)</td><td>April 15</td></tr>
           <tr><td>Has scholarship income (1042-S)</td><td>Form 1040-NR + Form 8843</td><td>Form 1NPR (if WI-source)</td><td>April 15</td></tr>
           <tr><td>No income but want refund</td><td>Form 1040-NR + Form 8843</td><td>Form 1NPR (to claim WI withholding)</td><td>April 15</td></tr>
         </tbody>
@@ -170,7 +170,7 @@
             <tbody>
               <tr><td>U.S. Employment wages</td><td><span class="tag tag-blue">W-2</span></td><td>On-campus jobs, OPT/CPT employment</td></tr>
               <tr><td>Scholarships (non-tuition portion)</td><td><span class="tag tag-blue">1042-S</span></td><td>Room, board, stipends — taxable portion only</td></tr>
-              <tr><td>Investment income (dividends, capital gains)</td><td><span class="tag tag-blue">1099-B/DIV</span></td><td>Subject to 30% withholding unless treaty applies</td></tr>
+              <tr><td>Investment income (U.S. dividends)</td><td><span class="tag tag-blue">1099-DIV / 1042-S</span></td><td>Subject to 30% withholding unless treaty applies. Note: capital gains from stock sales are generally <em>not</em> taxable for NRAs — see Section 11</td></tr>
               <tr><td>Independent contractor / awards</td><td><span class="tag tag-blue">1099-NEC/MISC</span></td><td>Complex situation — see <a href="#complex" style="color:var(--primary);">Complex Situations</a> section</td></tr>
             </tbody>
           </table>
@@ -321,7 +321,7 @@
       <div class="info-card">
         <div class="card-icon">🪪</div>
         <h4>Tax ID</h4>
-        <p>Social Security Number (SSN) if authorized to work, or ITIN (Individual Taxpayer ID) for scholarship recipients</p>
+        <p>Social Security Number (SSN) if authorized to work, or ITIN (Individual Taxpayer Identification Number) if you have U.S. taxable income but no SSN (e.g., taxable scholarship recipients, or those not authorized to work)</p>
       </div>
       <div class="info-card">
         <div class="card-icon">📊</div>
@@ -581,8 +581,8 @@
         <div class="step-num">1</div>
         <div class="step-content">
           <h4>Confirm Your Filing Status</h4>
-          <p>Select <strong>"Nonresident Alien"</strong> as your filing status in TaxSlayer. This generates Form 1040-NR. Most nonresident students file as <strong>Single</strong>. Do not select "Married Filing Jointly" unless you qualify for a rare exception.</p>
-          <div class="step-warning">Do NOT select "Single," "Married Filing Jointly," or any other status — you must specifically choose "Nonresident Alien."</div>
+          <p>Select <strong>"Nonresident Alien"</strong> as your filing type in your tax software. This generates Form 1040-NR instead of the standard 1040. Most nonresident students then file with a status of <strong>Single</strong>. Do not select "Married Filing Jointly" unless you qualify for a specific exception.</p>
+          <div class="step-warning">Do NOT use a standard resident filing type — you must specifically choose the <strong>"Nonresident Alien"</strong> or "1040-NR" option. Filing the wrong form (1040 instead of 1040-NR) can affect your visa status.</div>
         </div>
       </div>
 
@@ -635,7 +635,7 @@
             <li>Enter days in the U.S. that you can exclude (same count as Schedule OI)</li>
             <li>Enter your school's name, address, phone, and official's name from your I-20/DS-2019</li>
           </ul>
-          <div class="step-tip">💡 When using TaxSlayer FSA, Form 8843 is e-filed with your return — no need to mail it separately!</div>
+          <div class="step-tip">💡 When using software that supports e-filing (TaxSlayer FSA, Sprintax, OLT.com), Form 8843 is submitted with your return — no need to mail it separately. If using Glacier Tax Prep, you must print and mail Form 8843 along with your 1040-NR.</div>
         </div>
       </div>
 
@@ -698,8 +698,8 @@
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-content">
-          <h4>Add Wisconsin State Return in TaxSlayer</h4>
-          <p>After completing your federal return, select <strong>"Add State Return"</strong> and choose <strong>"Wisconsin."</strong> The software will automatically generate Form 1NPR. Do NOT file Wisconsin Form 1 (the resident return).</p>
+          <h4>Add Wisconsin State Return in Your Tax Software</h4>
+          <p>After completing your federal return, add a state return and select <strong>"Wisconsin."</strong> Your software will generate Form 1NPR. Do <strong>NOT</strong> file Wisconsin Form 1 (the resident return) — Form 1NPR is specifically for nonresidents and part-year residents.</p>
         </div>
       </div>
 
